@@ -241,8 +241,19 @@ add_filter( 'wp_speculation_rules_configuration', '__return_null' );
 
 add_theme_support( 'title-tag' );
 
-
-
 add_action('init', function() {
     load_plugin_textdomain('acf', false, dirname(plugin_basename(__FILE__)) . '/languages/');
+});
+
+
+// Save ACF fields to theme
+add_filter('acf/settings/save_json', function($path) {
+    return get_stylesheet_directory() . '/acf-json';
+});
+
+// Load ACF fields from theme
+add_filter('acf/settings/load_json', function($paths) {
+    unset($paths[0]);
+    $paths[] = get_stylesheet_directory() . '/acf-json';
+    return $paths;
 });
