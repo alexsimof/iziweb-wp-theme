@@ -1,0 +1,309 @@
+
+.smm
+  &-hero-wrap
+    background: url(../img/smm-bg.webp) no-repeat top
+    background-size: 100% 100%
+  &-hero-btn
+    margin-top: 120px
+
+@media (max-width: 1024px)
+  .smm
+    &-hero-wrap
+      background: url(../img/smm-hero1024-bg.webp) no-repeat top
+      background-size: 100% 100%
+    &-hero-btn
+      margin-top: 700px
+
+@media (max-width: 800px)
+  .smm
+    &-hero-btn
+      margin-top: 520px
+
+@media (max-width: 650px)
+  .smm
+    &-hero-btn
+      margin-top: 420px
+
+@media (max-width: 510px)
+  .smm
+    &-hero-wrap
+      background: url(../img/smm-hero510-bg.webp) no-repeat center
+      background-size: 100% 100%
+    &-hero-btn
+      margin-top: 320px
+
+@media (max-width: 425px)
+  .smm
+    &-hero-btn
+      margin-top: 330px
+
+@media (max-width: 380px)
+  .smm
+    &-hero-wrap
+      background: url(../img/smm-hero380-bg.webp) no-repeat center
+      background-size: 100% 100%
+
+// packages
+
+.smm
+  &-pack-wrap
+    gap: 25px
+  &-pack-cart-wrap
+    height: 650px
+    justify-content: flex-start
+
+  &-pack-price
+    margin-bottom: 20px
+  &-pack-list ul
+    padding-left: 10px
+
+@media (max-width: 1240px)
+  .smm
+    &-pack-wrap
+      grid-template-columns: repeat(2, 400px)
+    &-pack-cart-wrap
+      height: 530px
+
+@media (max-width: 900px)
+  .smm
+    &-pack-wrap
+      grid-template-columns: 425px
+      justify-content: center
+
+@media (max-width: 450px)
+  .smm
+    &-pack-wrap
+      grid-template-columns: 1fr
+
+@media (max-width: 400px)
+  .smm
+    &-pack-cart-wrap
+      height: 565px
+
+@media (max-width: 330px)
+  .smm
+    &-pack-list ul li
+      line-height: 26px
+
+// advantages
+
+.smm
+  &-adv-wrap
+    display: grid
+    grid-template-columns: repeat(3, 1fr)
+    grid-template-rows: repeat(2, auto)
+
+  &-adv-cart1
+    grid-area: 1 / 1 / 2 / 3
+  &-adv-cart2
+    grid-area: 2 / 1 / 3 / 2
+  &-adv-cart3
+    grid-area: 2 / 2 / 3 / 3
+  &-adv-cart4
+    grid-area: 1 / 3 / 3 / 4
+
+  &-adv-cart-title1
+    max-width: 600px
+    font-size: 41px
+    line-height: 44px
+    bottom: auto
+    top: 30px
+  &-adv-cart-title2, &-adv-cart-title3, &-adv-cart-title4
+    font-size: 27px
+    line-height: 29px
+    left: 50px
+    top: 30px
+  &-adv-cart-title2
+    max-width: 300px
+    letter-spacing: 0
+  &-adv-cart-title3
+    top: auto
+    bottom: 100px
+
+@media (max-width: 1300px)
+  .smm
+    &-adv-cart-title1
+      left: 25px
+    &-adv-cart-title2, &-adv-cart-title3, &-adv-cart-title4
+      left: 25px
+      padding-right: 10px
+
+@media (max-width: 1250px)
+  .smm
+    &-adv-cart-title1
+      max-width: 550px
+    &-adv-cart-title2
+      max-width: 270px
+    &-adv-cart-title3
+      bottom: 70px
+    &-adv-cart-title4
+      max-width: 300px
+
+@media (max-width: 1024px)
+  .smm
+    &-adv-wrap
+      display: grid
+      grid-template-columns: repeat(2, 1fr)
+      grid-template-rows: repeat(3, auto)
+
+    &-adv-cart1
+      grid-area: 1 / 1 / 2 / 3
+    &-adv-cart2
+      grid-area: 2 / 1 / 3 / 2
+    &-adv-cart3
+      grid-area: 2 / 2 / 3 / 3
+    &-adv-cart4
+      grid-area: 3 / 1 / 4 / 3
+
+    &-adv-cart-title1
+      max-width: 550px
+    &-adv-cart-title2
+      max-width: 270px
+    &-adv-cart-title3
+      bottom: 70px
+    &-adv-cart-title4
+      max-width: 400px
+      top: auto
+      bottom: 30px
+
+@media (max-width: 768px)
+  .smm
+    &-adv-cart-title3
+      bottom: 50px
+
+@media (max-width: 640px)
+  .smm
+    &-adv-cart-title1
+      top: 20px
+      left: 15px
+      font-size: 24px
+      line-height: 28px
+    &-adv-cart-title2
+      left: 15px
+      top: 20px
+      font-size: 20px
+      line-height: 25px
+      padding-right: 40px
+    &-adv-cart-title3
+      left: 20px
+      bottom: 30px
+      font-size: 20px
+      line-height: 25px
+    &-adv-cart-title4
+      left: 20px
+      bottom: 20px
+      font-size: 20px
+      line-height: 25px
+
+@media (max-width: 470px)
+  .smm
+    &-adv-cart-title1
+      font-size: 20px
+      line-height: 24px
+      padding-right: 35px
+    &-adv-cart-title2
+      font-size: 18px
+      line-height: 20px
+    &-adv-cart-title3
+      font-size: 18px
+      line-height: 20px
+    &-adv-cart-title4
+      font-size: 18px
+      line-height: 20px
+
+@media (max-width: 375px)
+  .smm
+    &-adv-cart-title1
+      font-size: 18px
+      line-height: 20px
+      padding-right: 35px
+    &-adv-cart-title2
+      font-size: 15px
+      line-height: 18px
+      padding-right: 20px
+    &-adv-cart-title3
+      font-size: 15px
+      line-height: 18px
+    &-adv-cart-title4
+      font-size: 15px
+      line-height: 18px
+
+// operaton
+
+.smm
+
+  &-oper-str::after
+    width: 240px
+    height: 210px
+    right: 100px
+    bottom: 50px
+    background: url(../img/smm-icon.svg) no-repeat
+    transform: scale(0.8)
+
+@media (max-width: 1024px)
+  .smm
+    &-oper-str::after
+      right: 30px
+      transform: scale(0.7)
+
+@media (max-width: 425px)
+  .smm
+    &-oper-str::after
+      right: -30px
+      bottom: 20px
+      transform: scale(0.6)
+
+// prices
+
+.smm
+  &-pr-bl1
+    padding-top: 24px
+
+  &-pr-txt2
+    max-width: 290px
+  &-pr-txt3
+    max-width: 270px
+  &-pr-txt4
+    max-width: 330px
+  &-pr-txt5
+    max-width: 310px
+
+@media (max-width: 1024px)
+  .smm
+    &-pr-bl1
+      padding-top: 35px
+    &-pr-txt2
+      max-width: 190px
+    &-pr-txt3
+      max-width: 177px
+    &-pr-txt4
+      max-width: 200px
+    &-pr-txt5
+      max-width: 160px
+
+@media (max-width: 680px)
+  .smm
+    &-pr-bl1
+      padding-top: 45px
+    &-pr-bl3
+      padding-left: 23px
+    &-pr-txt2
+      max-width: 110px
+    &-pr-txt3
+      max-width: 120px
+    &-pr-txt4
+      max-width: 120px
+    &-pr-txt5
+      max-width: 120px
+
+@media (max-width: 425px)
+  .smm
+    &-pr-txt1, &-pr-txt2, &-pr-txt3, &-pr-txt4, &-pr-txt5
+      font-size: 16px
+      line-height: 20px
+    &-pr-bl1
+      padding-top: 53px
+    &-pr-txt1
+      max-width: 140px
+    .smm-pr-txt3
+      max-width: 113px

@@ -1,0 +1,394 @@
+
+.a-hero
+  position: relative
+  background: $bg-hero-about
+  overflow: hidden
+  padding-top: 88px
+  &_wrap
+    display: flex
+    justify-content: center
+    align-items: flex-start
+    gap: 200px
+    padding-top: 80px
+    padding-bottom: 140px
+
+  &-logo
+    position: relative
+    img
+      position: relative
+      z-index: 1
+    &::after
+      content: ''
+      position: absolute
+      width: 1800px
+      height: 1600px
+      left: -650px
+      top: -510px
+      background: url(../img/about-star.webp) no-repeat
+      z-index: 0
+      opacity: 0.7
+  &_content
+    position: relative
+    width: 40%
+    margin-top: 50px
+    z-index: 1
+  &_text1
+    font-family: IBM Plex Mono
+    font-weight: 500
+    font-size: 50.63px
+    line-height: 100%
+    letter-spacing: -2%
+    text-transform: uppercase
+    margin: 0
+  &_text2
+    font-weight: 500
+    font-size: 48px
+    line-height: 52px
+    letter-spacing: -2px
+    margin: 0 0 35px
+    color: $text
+  &_text3
+    font-weight: 500
+    font-size: 25px
+    line-height: 30px
+    margin: 0
+
+.about-str
+  padding-top: 50px
+  padding-bottom: 50px
+
+@media (max-width: 1200px)
+  .a-hero
+    &_wrap
+      flex-direction: column
+      align-items: center
+    &_content
+      width: 100%
+
+@media (max-width: 425px)
+  .a-hero
+    &_text2
+      font-size: 35px
+      line-height: 40px
+    &_text3
+      font-size: 20px
+      line-height: 28px
+
+// team
+
+.team
+  background: $bg-team-about
+  padding-top: 100px
+  padding-bottom: 50px
+  &-slider
+    position: relative
+    margin-top: 100px
+
+.swiper-slide
+  &-wrap
+    position: relative
+    width: 416px
+    height: 653px
+    background: linear-gradient(309.46deg, #D4F1B4 34.99%, #C8FF46 58.42%, #CBEA68 81.09%)
+    mask-image: url(../img/team-bg.svg)
+    mask-repeat: no-repeat
+    mask-size: auto 100%
+    mask-position: center
+  &-image
+    img
+      display: block
+
+  &-content
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    position: absolute
+    left: -1px
+    bottom: -1px
+    padding: 30px
+    width: 417px
+    height: 320px
+    background: url(../img/cart-team-bg.png) no-repeat
+    background-size: cover
+  &-name
+    font-family: Golos Text
+    font-weight: 500
+    font-size: 41px
+    line-height: 45px
+    margin-top: 45px
+    margin-bottom: 0
+    flex: 1
+  &-job
+    font-weight: 400
+    font-size: 30px
+    line-height: 36px
+    text-transform: capitalize
+    margin-top: 0
+    margin-bottom: 0
+  &-desc
+    margin-top: 0
+    margin-bottom: 0
+
+.team-swiper
+  width: 95%
+  height: 730px
+  &-slide
+    width: 410px
+  &-pagination
+    position: absolute
+    bottom: 0
+
+.swiper-button-prev
+  top: -30px !important
+  left: 55px !important
+  svg
+    display: none
+  &::before
+    content: ''
+    position: absolute
+    left: 0
+    top: 0
+    width: 39px
+    height: 23px
+    background: url(../img/a-left.svg)
+    transform: rotate(-180deg)
+
+.swiper-button-next
+  top: -30px !important
+  right: 55px !important
+  svg
+    display: none
+  &::before
+    content: ''
+    position: absolute
+    left: 0
+    top: 0
+    width: 39px
+    height: 23px
+    background: url(../img/a-left.svg)
+    transform: rotate(0deg)
+
+@media (max-width: 425px)
+  .team
+    &-title
+      line-height: 35px
+  .swiper-button-next
+    right: 13px !important
+  .swiper-button-prev
+    left: 13px !important
+
+// list
+
+.list
+  padding-top: 150px
+  padding-bottom: 150px
+  &-par
+    position: relative
+    font-family: IBM Plex Mono
+    font-weight: 600
+    font-size: 15px
+    line-height: 100%
+    letter-spacing: 0
+    text-transform: uppercase
+    padding-left: 30px
+    color: $text-1
+    opacity: 0.3
+    &::before
+      content: ''
+      position: absolute
+      top: -3px
+      left: 0
+      width: 18px
+      height: 25px
+      color: $text-1
+      background: url(../img/a-left.svg) no-repeat
+      transform: scale(65%)
+  &-wrap
+    margin-top: 35px
+  &-item
+    display: flex
+    align-items: center
+    padding-top: 30px
+    padding-bottom: 30px
+    border-top: 1px solid $black
+    &:last-child
+      border-bottom: 1px solid $black
+  &-number
+    width: 60px
+    font-weight: 700
+    font-size: 20px
+    line-height: 100%
+    text-transform: lowercase
+    margin-top: 0
+    margin-bottom: 0
+  &-title
+    flex: 1
+    width: 55%
+    color: $text
+    margin-top: 0
+    margin-bottom: 0
+  &-text
+    width: 560px
+    font-family: Golos Text
+    font-weight: 500
+    font-size: 30px
+    line-height: 34px
+    color: $text
+    margin-top: 0
+    margin-bottom: 0
+
+@media (max-width: 1440px)
+  .list
+    &-number
+      width: 80px
+
+@media (max-width: 1300px)
+  .list
+    &-item h2
+      font-size: 55px
+
+@media (max-width: 1150px)
+  .list
+    &-item
+      flex-direction: column
+      align-items: flex-start
+    &-number
+      margin-bottom: 20px
+    &-title
+      margin-bottom: 20px
+
+@media (max-width: 580px)
+  .list
+    padding-top: 60px
+    padding-bottom: 80px
+    &-text
+      width: 100%
+      font-size: 25px
+    &-item h2
+      font-size: 40px
+    &-title
+      width: 100%
+
+@media (max-width: 425px)
+  .list
+    &-item h2
+      font-size: 35px
+
+//
+
+.approach
+  padding-bottom: 260px
+  &-par
+    position: relative
+    font-family: IBM Plex Mono
+    font-weight: 600
+    font-size: 15px
+    line-height: 100%
+    letter-spacing: 0
+    text-transform: uppercase
+    padding-left: 30px
+    color: $text-1
+    opacity: 0.3
+    &::before
+      content: ''
+      position: absolute
+      top: -4px
+      left: 0
+      width: 18px
+      height: 25px
+      color: $text-1
+      background: url(../img/a-left.svg) no-repeat
+      transform: scale(65%)
+  &-wrap
+    display: flex
+    align-items: center
+    gap: 50px
+  &-content
+    width: 50%
+  &-text
+    font-weight: 500
+    font-size: 25px
+    line-height: 30px
+    color: $h1-text
+
+  &-title
+    font-family: Golos Text
+    font-weight: 500
+    font-size: 42px
+    line-height: 52px
+    color: $text-1
+  &-image
+    position: relative
+    &::after
+      content: ''
+      position: absolute
+      left: -190px
+      top: 320px
+      width: 395px
+      height: 340px
+      background: url(../img/about-arrows.webp) no-repeat
+
+@media (max-width: 1200px)
+  .approach
+    &-wrap
+      flex-direction: column
+    &-content
+      width: 100%
+
+@media (max-width: 900px)
+  .approach
+    &-image::after
+      left: -110px
+      top: 340px
+
+@media (max-width: 650px)
+  .approach
+    &-image::after
+      top: 300px
+      transform: scale(80%)
+
+@media (max-width: 590px)
+  .approach
+    &-image::after
+      top: 250px
+      transform: scale(70%)
+
+@media (max-width: 510px)
+  .approach
+    padding-bottom: 170px
+    &-image::after
+      top: 170px
+      transform: scale(60%)
+
+@media (max-width: 470px)
+  .swiper
+    &-slide-name
+      max-width: 250px
+      font-size: 35px
+      line-height: 35px
+    &-slide-job
+      font-size: 22px
+  .approach
+    &-image::after
+      top: 140px
+      transform: scale(60%)
+
+@media (max-width: 425px)
+  .approach
+    &-image::after
+      top: 120px
+      left: -130px
+      transform: scale(60%)
+    &-text
+      font-size: 20px
+      line-height: 28px
+    &-title
+      font-size: 25px
+      line-height: 32px
+
+@media (max-width: 370px)
+  .approach
+    &-image::after
+      top: 70px
+      left: -130px
+      transform: scale(50%)

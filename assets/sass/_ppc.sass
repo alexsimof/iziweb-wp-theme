@@ -1,0 +1,263 @@
+
+.ppc
+  &-hero-wrap
+    background: url(../img/ppc-hero-bg.webp) no-repeat center
+    background-size: 100% 100%
+
+@media (max-width: 1150px)
+  .ppc
+    &-hero-wrap
+      padding-top: 120px
+    &-hero-title
+      margin-bottom: 60px
+
+@media (max-width: 1024px)
+  .ppc
+    &-hero-wrap
+      background: url(../img/ppc-hero-bg-1024.webp) no-repeat center
+      background-size: 100% 100%
+
+@media (max-width: 610px)
+  .ppc
+    &-hero-wrap
+      padding-top: 50px
+    &-hero-title
+      margin-bottom: 45px
+
+@media (max-width: 510px)
+  .ppc
+    &-hero-wrap
+      background: url(../img/ppc-hero-bg-510.webp) no-repeat center
+      background-size: 100% 100%
+      padding-bottom: 35px
+
+@media (max-width: 440px)
+  .ppc
+    &-hero-wrap
+      background: url(../img/ppc-hero-bg-380.webp) no-repeat center
+      background-size: 100% 100%
+      padding-bottom: 25px
+
+@media (max-width: 440px)
+  .ppc
+    &-hero-title
+      margin-bottom: 23px
+
+// packages
+
+.ppc
+  &-pack-cart-wrap
+    height: 675px
+
+  &-pack-wrap
+    grid-template-columns: repeat(4, 1fr)
+    justify-content: center
+    gap: 20px
+  &-pack-list
+    ul
+      padding-left: 0
+      li
+        font-size: 18px
+        line-height: 30px
+
+  &-pack-title
+    flex: 0
+  &-pack-price
+    margin-bottom: 50px
+    flex: 0
+
+@media (max-width: 1280px)
+  .ppc
+    &-pack-wrap
+      grid-template-columns: repeat(2, 400px)
+    &-pack-cart-wrap
+      height: 565px
+
+@media (max-width: 930px)
+  .ppc
+    &-pack-wrap
+      grid-template-columns: 416px
+
+@media (max-width: 450px)
+  .ppc
+    &-pack-wrap
+      grid-template-columns: 1fr
+
+@media (max-width: 375px)
+  .ppc
+    &-pack-price
+      margin-bottom: 15px
+    &-pack-list
+      ul
+        padding-left: 10px
+        li
+          font-style: 16px
+          line-height: 28px
+          &::before
+            top: 3px
+
+// advantages
+
+.ppc
+  &-adv-wrap
+    grid-template-columns: repeat(3, 1fr)
+  &-adv-cart1
+    grid-area: 1 / 1 / 2 / 3
+  &-adv-cart2
+    grid-area: 2 / 1 / 3 / 2
+  &-adv-cart3
+    grid-area: 2 / 2 / 3 / 3
+  &-adv-cart4
+    grid-area: 1 / 3 / 3 / 4
+
+  &-adv-cart-title1
+    max-width: 550px
+    font-size: 55px
+    line-height: 60px
+    left: 25px
+    bottom: 50px
+  &-adv-cart-title2
+    max-width: 360px
+    font-size: 36px
+    line-height: 40px
+    top: auto
+    left: 25px
+    bottom: 35px
+  &-adv-cart-title3
+    max-width: 390px
+    font-size: 36px
+    top: 25px
+  &-adv-cart-title4
+    font-size: 36px
+    bottom: auto
+    top: 25px
+    left: 40px
+
+@media (max-width: 1024px)
+  .ppc
+    &-adv-wrap
+      grid-template-columns: repeat(2, 1fr)
+      grid-template-rows: repeat(3, auto)
+    &-adv-cart1
+      grid-area: 1 / 1 / 2 / 3
+    &-adv-cart2
+      grid-area: 2 / 1 / 3 / 2
+    &-adv-cart3
+      grid-area: 2 / 2 / 3 / 3
+    &-adv-cart4
+      grid-area: 3 / 1 / 4 / 3
+    &-adv-cart-title1
+      max-width: 380px
+      font-size: 40px
+      line-height: 43px
+      top: 70px
+      left: 25px
+    &-adv-cart-title2
+      max-width: 260px
+      font-size: 30px
+      line-height: 35px
+      letter-spacing: 0px
+      top: auto
+      bottom: 20px
+      left: 25px
+    &-adv-cart-title3
+      font-size: 30px
+      line-height: 35px
+      top: 25px
+      left: 25px
+    &-adv-cart-title4
+      max-width: 350px
+      font-size: 30px
+      line-height: 35px
+      bottom: auto
+      top: 25px
+      left: 25px
+
+@media (max-width: 768px)
+  .ppc
+    &-adv-cart-title1
+      font-size: 30px
+      line-height: 33px
+    &-adv-cart-title2
+      font-size: 24px
+      line-height: 26px
+    &-adv-cart-title3
+      font-size: 24px
+      line-height: 26px
+    &-adv-cart-title4
+      font-size: 24px
+      line-height: 26px
+
+@media (max-width: 510px)
+  .ppc
+    &-adv-cart-title1
+      max-width: 240px
+      font-size: 22px
+      line-height: 26px
+      top: 60px
+    &-adv-cart-title2
+      max-width: 150px
+      font-size: 18px
+      line-height: 22px
+    &-adv-cart-title3
+      font-size: 18px
+      line-height: 22px
+    &-adv-cart-title4
+      max-width: 250px
+      font-size: 18px
+      line-height: 22px
+
+@media (max-width: 425px)
+  .ppc
+    &-adv-cart-title1
+      bottom: 25px
+      left: 15px
+    &-adv-cart-title2
+      left: 15px
+    &-adv-cart-title3
+      left: 15px
+    &-adv-cart-title4
+      left: 15px
+
+//  operation
+
+.ppc
+  &-oper-item
+    max-width: 440px
+
+  &-oper-str
+    position: relative
+    padding-top: 0
+    padding-bottom: 0
+    &::after
+      content: ''
+      position: absolute
+      bottom: 50px
+      right: 100px
+      width: 265px
+      height: 222px
+      background: url(../img/ppc-oper-rp.svg) no-repeat
+      opacity: 0.8
+      transform: scale(50%)
+
+@media (max-width: 1024px)
+  .ppc
+    &-oper-wrap
+      row-gap: 115px
+      margin-top: 150px
+    &-oper-str::after
+      right: 0
+      bottom: 60px
+      transform: scale(70%)
+
+@media (max-width: 510px)
+  .ppc
+    &-oper-wrap
+      grid-template-columns: 1fr
+
+//
+
+@media (max-width: 680px)
+  .ppc
+    &-prices-text1
+      padding-top: 12px

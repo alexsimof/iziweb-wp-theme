@@ -1,0 +1,330 @@
+
+.chat
+  &-hero-wrap
+    background: url(../img/chat-bg.webp) no-repeat top
+    background-size: 100% 100%
+  &-hero-title
+    height: auto
+  &-hero-subtitle
+    max-width: 476px
+  &-hero-btn
+    margin-top: 70px
+
+@media (max-width: 1200px)
+  .chat
+    &-hero-wrap
+      padding-top: 80px
+
+@media (max-width: 1024px)
+  .chat
+    &-hero-wrap
+      background: url(../img/chat1024-bg.webp) no-repeat top
+      background-size: 100% 100%
+      padding-top: 140px
+    &-hero-subtitle
+      max-width: 100%
+
+    &-hero-btn
+      margin-top: 70vw
+
+@media (max-width: 768px)
+  .chat
+    &-hero-wrap
+      padding-top: 100px
+    &-hero-btn
+      margin-top: 70vw
+
+@media (max-width: 510px)
+  .chat
+    &-hero-wrap
+      background: url(../img/chat510-bg.webp) no-repeat top
+      background-size: 100% 100%
+      padding-top: 60px
+    &-hero-title
+      font-size: 33px
+    &-hero-subtitle
+      margin-top: 0
+      p
+        line-height: 20px
+
+@media (max-width: 380px)
+  .chat
+    &-hero-wrap
+      background: url(../img/chat380-bg.webp) no-repeat top
+      background-size: 100% 100%
+
+// packages
+
+.chat
+  &-txt1
+    display: none
+  &-pack-wrap
+    grid-template-columns: repeat(2, 430px)
+    gap: 100px
+    justify-content: center
+  &-pack-cart-wrap
+    height: 518px
+    padding: 25px
+  &-pack-cr-title
+    font-size: 42px
+    line-height: 45px
+    letter-spacing: -3px
+  &-pack-cr-list ul li
+    line-height: 38px
+    &::before
+      top: 9px
+  &-pack-bot
+    width: 100%
+    position: relative
+    overflow: hidden
+    &::after
+      content: ''
+      position: absolute
+      width: 400px
+      height: 200px
+      left: 40px
+      bottom: 0
+      background: url(../img/chat-bot-shw.webp) no-repeat center
+
+    img
+      animation: jump 3s infinite
+
+@keyframes jump
+  0%
+    transform: translateY(0px)
+  50%
+    transform: translateY(10px)
+  100%
+    transform: translateY(0px)
+
+@media (max-width: 1024px)
+  .chat
+    &-pack-wrap
+      grid-template-columns: repeat(2, 1fr)
+      gap: 100px
+    &-pack-bot::after
+      left: 25px
+
+@media (max-width: 910px)
+  .chat
+    &-pack-wrap
+      gap: 10px
+    &-pack-cart-wrap
+      justify-content: flex-start
+      align-items: center
+    &-pack-cr-title
+      flex: 0
+      font-size: 30px
+      line-height: 45px
+      letter-spacing: -1px
+      margin-bottom: 0
+    &-pack-cr-price
+      flex: 0
+      margin-bottom: 20px
+      font-size: 20px
+      strong
+        font-size: 30px
+    &-pack-cr-list ul li
+      font-size: 18px
+      line-height: 28px
+      padding-left: 40px
+
+@media (max-width: 800px)
+  .chat
+    &-pack-cart-wrap
+      height: 480px
+    &-pack-bot::after
+      left: 10px
+
+@media (max-width: 700px)
+  .chat
+    &-pack-wrap
+      grid-template-columns: 346px
+    &-pack-cart-wrap
+      height: 500px
+    &-pack-bot::after
+      left: -10px
+    &-pack-cr-list ul
+      padding-left: 0
+      li::before
+        top: 7px
+        transform: scale(80%)
+    &-pack-bot
+      display: none
+
+@media (max-width: 425px)
+  .chat-pack-wrap
+    grid-template-columns: 310px
+  .chat-pack-cr-title
+    font-size: 26px
+  .chat-pack-cr-price
+    font-size: 18px
+    strong
+      font-size: 26px
+
+// advantages 
+
+.chat
+  &-adv-wrap
+    grid-template-columns: repeat(3, 1fr)
+    grid-template-rows: repeat(2, auto)
+
+  &-adv-cart1
+    grid-area: 1 / 1 / 2 / 3
+  &-adv-cart2
+    grid-area: 2 / 1 / 3 / 2
+  &-adv-cart3
+    grid-area: 2 / 2 / 3 / 3
+  &-adv-cart4
+    grid-area: 1 / 3 / 3 / 4
+
+  &-adv-title1
+    max-width: 550px
+    font-size: 55px
+    line-height: 59px
+    letter-spacing: -3px
+    text-align: right
+    bottom: auto
+    left: auto
+    top: 30px
+    right: 30px
+  &-adv-title2
+    max-width: 220px
+    font-size: 36px
+    line-height: 39px
+    letter-spacing: -2%
+    top: 20px
+    left: 20px
+  &-adv-title3
+    font-size: 36px
+    line-height: 39px
+    letter-spacing: -2%
+    top: 20px
+    left: 20px
+  &-adv-title4
+    max-width: 250px
+    font-size: 36px
+    line-height: 39px
+    letter-spacing: -2%
+    text-align: right
+    bottom: auto
+    top: 20px
+    left: 20px
+
+@media (max-width: 1024px)
+  .chat
+    &-adv-wrap
+      grid-template-columns: repeat(2, 1fr)
+      grid-template-rows: repeat(3, auto)
+
+    &-adv-cart1
+      grid-area: 1 / 1 / 2 / 3
+    &-adv-cart2
+      grid-area: 2 / 1 / 3 / 2
+    &-adv-cart3
+      grid-area: 2 / 2 / 3 / 3
+    &-adv-cart4
+      grid-area: 3 / 1 / 4 / 3
+
+    &-adv-title4
+      left: auto
+      right: 20px
+
+@media (max-width: 768px)
+  .chat
+    &-adv-title1
+      font-size: 36px
+      line-height: 38px
+      letter-spacing: 0
+    &-adv-title2, &-adv-title3, &-adv-title4
+      font-size: 30px
+      line-height: 38px
+      letter-spacing: 0
+
+@media (max-width: 510px)
+  .chat
+    &-adv-title1
+      font-size: 24px
+      line-height: 30px
+      letter-spacing: 0
+    &-adv-title2, &-adv-title3, &-adv-title4
+      font-size: 20px
+      line-height: 22px
+      letter-spacing: 0
+
+// operation
+
+.chat
+  &-oper-str::after
+    width: 216px
+    height: 266px
+    background: url(../img/chat-adv-icon.svg) no-repeat
+
+@media (max-width: 510px)
+  .chat-oper-str::after
+    bottom: 0
+    right: -20px
+
+// prices
+
+.chat
+  &-pr-block5
+    margin-right: 0
+  &-pr-txt1
+    max-width: 320px
+  &-pr-txt4
+    max-width: 320px
+
+@media (max-width: 1024px)
+  .chat
+    &-pr-txt1
+      max-width: 220px
+    &-pr-txt4
+      max-width: 240px
+
+@media (max-width: 768px)
+  .chat
+    &-pr-txt1, &-pr-txt2, &-pr-txt3, &-pr-txt4, &-pr-txt5
+      max-width: 190px
+      font-size: 20px
+      line-height: 24px
+
+@media (max-width: 680px)
+  .chat
+    &-pr-blocks
+      gap: 80px 120px
+    &-pr-block1, &-pr-block2, &-pr-block3, &-pr-block4, &-pr-block5
+      height: 125px
+    &-pr-block1
+      height: 105px
+      padding-top: 25px
+    &-pr-txt1, &-pr-txt2, &-pr-txt3, &-pr-txt4, &-pr-txt5
+      max-width: 160px
+
+@media (max-width: 510px)
+  .chat
+    &-prices
+      padding-top: 200px
+    &-pr-blocks
+      gap: 50px 100px
+
+@media (max-width: 425px)
+  .chat
+    &-pr-blocks
+      gap: 50px
+    &-pr-txt1, &-pr-txt2, &-pr-txt3, &-pr-txt4, &-pr-txt5
+      max-width: 150px
+      font-size: 16px
+      line-height: 20px
+
+@media (max-width: 320px)
+  .chat
+    &-pr-block1
+      height: 100px
+      padding-top: 15px
+    &-pr-txt1, &-pr-txt2, &-pr-txt3, &-pr-txt4, &-pr-txt5
+      max-width: 125px
+      font-size: 14px
+      line-height: 16px
+    &-block5
+      padding-top: 15px

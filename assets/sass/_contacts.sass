@@ -1,0 +1,80 @@
+
+.cont
+  padding-top: 90px
+  padding-bottom: 120px
+  &-wrap
+    display: flex
+    justify-content: space-between
+    align-items: center
+    gap: 20px
+  &-content
+    width: 550px
+  &-image
+    height: 600px
+    overflow: hidden
+    border-radius: 16px
+    img
+      display: block
+      height: 100%
+      object-fit: cover
+  &-title
+    margin-top: 30px
+    margin-bottom: 45px
+  &-email-txt, &-phone-txt, &-adress-txt
+    font-weight: 400
+    font-size: 20px
+    line-height: 28px
+    margin-top: 0
+    margin-bottom: 0
+  &-email, &-phone
+    display: block
+    text-decoration: none
+    font-weight: 400
+    font-size: 33px
+    line-height: 45px
+    color: $text
+    margin-top: 0
+    margin-bottom: 30px
+    &:active, &:focus
+      color: $text
+  &-adress
+    max-width: 320px
+    font-weight: 500
+    font-size: 22px
+    line-height: 32px
+    margin-top: 0
+    margin-bottom: 0
+
+.contacts-page
+  background: url(../img/cont-bg.webp) no-repeat center
+  background-size: cover
+  &-title
+    color: $text-1
+  &-subtitle
+    max-width: 840px
+    color: $text-1
+    margin: 0 auto 80px
+
+@media (max-width: 1024px)
+  .cont-image
+    height: 480px
+
+  .cont-page
+    background: url(../img/cont-bg1.svg) no-repeat top
+    background-size: cover
+    padding-top: 110px
+
+@media (max-width: 900px)
+  .cont
+    padding-bottom: 50px
+    &-wrap
+      flex-direction: column
+      align-items: flex-start
+      gap: 50px
+    &-content
+      width: 100%
+
+@media (max-width: 500px)
+  .cont
+    &-email, &-phone
+      font-size: 25px

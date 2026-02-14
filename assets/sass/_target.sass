@@ -1,0 +1,99 @@
+
+//
+
+.target
+  &-pack-wrap
+    justify-content: center
+  &-pack-cart-wrap
+    height: 700px
+
+  &-pack-title
+    flex: 0
+  &-pack-price
+    flex: 0
+    margin-bottom: 30px
+
+@media (max-width: 1240px)
+  .target-pack-wrap
+    grid-template-columns: repeat(2, 400px)
+  .target-pack-cart-wrap
+    height: 560px
+
+@media (max-width: 875px)
+  .target-pack-wrap
+    grid-template-columns: repeat(2, 1fr)
+
+@media (max-width: 730px)
+  .target-pack-cart-wrap
+    height: 600px
+
+@media (max-width: 675px)
+  .target-pack-wrap
+    grid-template-columns: 400px
+
+@media (max-width: 450px)
+  .target-pack-wrap
+    grid-template-columns: 1fr
+  .target-pack-list ul li
+    font-size: 18px
+    line-height: 28px
+
+// operation
+
+.target
+
+  &-oper-str
+    position: relative
+    padding-top: 0
+    padding-bottom: 0
+    &::after
+      content: ''
+      position: absolute
+      bottom: 150px
+      right: 100px
+      width: 265px
+      height: 222px
+      background: url(../img/ppc-oper-rp.svg) no-repeat
+      opacity: 0.8
+      transform: scale(100%)
+
+@media (max-width: 1220px)
+  .target
+    &-operation
+      padding-top: 280px
+
+@media (max-width: 1024px)
+  .target
+    &-operation
+      padding-top: 160px
+    &-oper-str::after
+      right: 0
+      bottom: 60px
+      transform: scale(70%)
+
+// prices
+
+.target
+  &-pr-block1
+    padding-top: 15px
+  &-pr-txt1
+    padding: 10px
+
+  &-pr-txt3
+    max-width: 300px
+  &-pr-txt4
+    padding-top: 10px
+
+@media (max-width: 1024px)
+  .target
+    &-pr-txt3
+      max-width: 250px
+
+@media (max-width: 680px)
+  .target
+    &-pr-block1
+      padding-top: 48px
+    &-pr-block3
+      padding-left: 30px
+    &-pr-txt3
+      max-width: 140px

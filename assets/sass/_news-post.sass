@@ -1,0 +1,63 @@
+
+.news-blog
+  &-wrap
+    display: flex
+    justify-content: space-between
+    gap: 30px
+    border-bottom: 1px solid $text-1
+    padding-bottom: 120px
+    margin-bottom: 130px
+  &-hero
+    width: 74%
+  &-image
+    img
+      width: 100%
+      border-radius: 16px
+  &-title
+    margin-top: 70px
+  &-aut
+    display: flex
+    justify-content: space-between
+    align-items: center
+    padding-top: 20px
+    padding-bottom: 20px
+    border-bottom: 1px solid $text-1
+  &-time, &-autor
+    margin-top: 0
+    margin-bottom: 0
+
+  &-other
+    margin-bottom: 150px
+  &-header
+    display: flex
+    justify-content: space-between
+    align-items: center
+    margin-bottom: 65px
+  &-other-title
+    margin-top: 0
+    margin-bottom: 15px
+  &-btn
+    opacity: 0.5
+  &-link
+    text-decoration: none
+    font-family: IBM Plex Mono
+    font-weight: 600
+    font-size: 24px
+    line-height: 100%
+    text-transform: uppercase
+    margin-right: 30px
+  &-btn-prev
+    position: relative
+    opacity: 0.3
+    margin-top: 45px
+    a
+      padding-left: 30px
+    &::before
+      content: ''
+      position: absolute
+      left: 0
+      top: 0
+      width: 15px
+      height: 24px
+      background: url(../img/a-left.svg) no-repeat
+      transform: rotate(180deg)

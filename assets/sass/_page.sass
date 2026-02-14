@@ -1,0 +1,32 @@
+
+.team
+  &-title
+    margin-top: 0
+    margin-bottom: 50px
+  &-content
+    h5
+      margin-top: 40px
+      margin-bottom: 20px
+    ul
+      list-style: none
+      padding-left: 60px
+      li
+        position: relative
+        &::before
+          content: ''
+          position: absolute
+          top: 2px
+          left: -40px
+          width: 15px
+          height: 24px
+          background: url(../img/a-left.svg) no-repeat
+          transform: scale(70%)
+
+@media ( max-width: 1024px )
+  .team
+    &-wrap
+      flex-direction: column
+    &-title
+      width: 100%
+    &-content
+      width: 100%

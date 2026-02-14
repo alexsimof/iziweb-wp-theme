@@ -1,0 +1,148 @@
+
+.project-post
+  padding-top: 90px
+
+.post
+  &-block
+    display: flex
+    align-items: flex-start
+    justify-content: space-between
+    column-gap: 50px
+    margin-bottom: 20px
+    h4
+      width: 600px
+      margin-top: 0
+      margin-bottom: 0
+    h6
+      margin-top: 0px
+      margin-bottom: 47px
+  &-image
+    text-align: right
+  &-body
+    width: 70%
+    margin-top: 10px
+    ul
+      list-style: none
+      padding-left: 0
+      margin-bottom: 0
+
+  &-gallery
+    ul
+      list-style: none
+      padding-left: 0
+    img
+      object-fit: cover
+      border-radius: 16px
+
+.post-list2
+  width: calc(50% - 5px)
+  float: left
+  img
+    aspect-ratio: 5/3
+.post-list3
+  width: calc(50% - 5px)
+  float: right
+  img
+    aspect-ratio: 5/3
+
+.block2
+  justify-content: flex-start
+  margin-top: 50px
+  border-bottom: 1px solid $text-1
+  padding-bottom: 100px
+
+.body2
+  ul
+    display: flex
+    justify-content: flex-start
+    gap: 20px
+    flex-wrap: wrap
+    li
+      padding: 10px 15px
+      border: 1px solid $black
+      border-radius: 16px
+.block3
+  padding-top: 80px
+  padding-bottom: 110px
+  border-bottom: 1px solid $text-1
+.body3
+  ul
+    padding-left: 30px
+    li
+      position: relative
+      &::before
+        content: ''
+        position: absolute
+        left: -30px
+        top: 7px
+        width: 7px
+        height: 15px
+        background: url(../img/one-arrow-left.svg) no-repeat
+
+.block4
+  padding-top: 80px
+  padding-bottom: 110px
+.body4
+  p
+    margin-top: 0
+  ul
+    padding-left: 30px
+    li
+      position: relative
+      &::before
+        content: ''
+        position: absolute
+        left: -30px
+        top: 7px
+        width: 7px
+        height: 15px
+        background: url(../img/one-arrow-left.svg) no-repeat
+
+.block5
+  padding-top: 80px
+  padding-bottom: 110px
+.body5
+  p
+    margin-top: 0
+  ul
+    padding-left: 30px
+    li
+      position: relative
+      &::before
+        content: ''
+        position: absolute
+        left: -30px
+        top: 7px
+        width: 7px
+        height: 15px
+        background: url(../img/one-arrow-left.svg) no-repeat
+
+@media (max-width: 1280px)
+  .post-block
+    h4
+      font-size: 45px
+      line-height: 50px
+    h6
+      font-size: 35px
+      line-height: 40px
+
+@media (max-width: 1024px)
+  .post-block
+    flex-direction: column
+    h4
+      width: 100%
+      margin-bottom: 30px
+  .post-body
+    width: 100%
+
+@media (max-width: 768px)
+  .post-block
+    h4
+      font-size: 30px
+      line-height: 34px
+    h6
+      font-size: 20px
+      line-height: 25px
+    p, li
+      font-size: 16px
+      line-height: 20px
